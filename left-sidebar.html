@@ -24,7 +24,7 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li class="current"><a href="left-sidebar.html">Left Sidebar</a></li>
+								<li class="current"><a href="left-sidebar.html">Town + Town assets</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
 								<li><a href="no-sidebar.html">About Me</a></li>
 							</ul>
@@ -98,25 +98,78 @@
 												This also includes a boss, Wurl, which can be seen below.
 											</p>
 						
-											<a href="#" class="wurl"><img src="images/Wurl.png" alt="" /></a>
+											<img src="images/Wurl.png" class="img-fluid" alt="...">
 										</section>
 										<section>
 											<header>
-												<h3>So in conclusion ...</h3>
+												<h3>Assets</h3>
 											</header>
 											<p>
-												Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-												eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-												elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-												sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla.
-												Maecenas sagittis convallis justo vel mattis.
+												Below is a collection of the assets that I made for this introductory level as well as some that were re-used for another level involving a Doctor Office.
+												All these assets were made in Blender. Asset materials were also created by me within Unity itself as opposed to making them in Blender.
 											</p>
+
+											<h3>Click images to make them bigger</h3>
+
+											<style>
+
+												* {
+												box-sizing: border-box;
+												}
+
+												.column {
+													float: left;
+													width: 25%;
+												}
+
+												#imgtext {
+												position: absolute;
+												bottom: 15px;
+												left: 15px;
+												color: white;
+												font-size: 20px;
+												}
+											</style>
+
+											<div class="row">
+												<div class="column">
+												  <img src="/images/Fountain.png" alt="Fountain" style="width: 100%" onclick="myFunction(this);"> 
+												</div>
+												<div class="column">
+												  <img src="/images/Book.png" alt="Book" style="width: 100%" onclick="myFunction(this);"> 
+												</div>
+												<div class="column">
+												  <img src="/images/Candle.png" alt="Candle" style="width:100%" onclick="myFunction(this);">
+												</div>
+												<div class="column">
+												  <img src="/images/Bottle.png" alt="Book" style="width:100%" onclick="myFunction(this);">
+												</div>
+											  </div>
+											  
+											  
+											  <div class="container">
+												<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+												<img id="expandedImg" style="width:100%">
+												<div id="imgtext"></div>
+											  </div>
+
+											  <script>
+												function myFunction(imgs) {
+												  var expandImg = document.getElementById("expandedImg");
+												  var imgText = document.getElementById("imgtext");
+												  expandImg.src = imgs.src;
+												  imgText.innerHTML = imgs.alt;
+												  expandImg.parentElement.style.display = "block";
+												}
+												</script>
 										</section>
 									</article>
 
 							</div>
 						</div>
 					</div>
+
+					
 				</section>
 
 			<!-- Footer -->
