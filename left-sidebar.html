@@ -130,8 +130,104 @@
 												font-size: 20px;
 												}
 											</style>
+											<div class="container">
 
-											<div class="row">
+												<!-- Full-width images with number text -->
+												<div class="mySlides">
+												  <div class="numbertext">1 / 6</div>
+												  <img src="/images/Fountain.png" style="width:100%">
+												</div>
+											  
+												<div class="mySlides">
+												  <div class="numbertext">2 / 6</div>
+												  <img src="/images/Book.png" style="width:100%">
+												</div>
+											  
+												<div class="mySlides">
+												  <div class="numbertext">3 / 6</div>
+												  <img src="/images/Candle.png" style="width:100%">
+												</div>
+											  
+												<div class="mySlides">
+												  <div class="numbertext">4 / 6</div>
+												  <img src="/images/Bottle.png" style="width:100%">
+												</div>
+											  
+												<div class="mySlides">
+												  <div class="numbertext">5 / 6</div>
+												  <img src="/images/arenaInScene.png" style="width:100%">
+												</div>
+											  
+												<div class="mySlides">
+												  <div class="numbertext">6 / 6</div>
+												  <img src="/images/marketStalls.png" style="width:100%">
+												</div>
+											  
+												<!-- Next and previous buttons -->
+												<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+												<a class="next" onclick="plusSlides(1)">&#10095;</a>
+											  
+												<!-- Image text -->
+												<div class="caption-container">
+												  <p id="caption"></p>
+												</div>
+											  
+												<!-- Thumbnail images -->
+												<div class="row">
+												  <div class="column">
+													<img class="demo cursor" src="/images/Fountain.png" style="width:100%" onclick="currentSlide(1)" alt="Fountain, central point of the Town.">
+												  </div>
+												  <div class="column">
+													<img class="demo cursor" src="/images/Book.png" style="width:100%" onclick="currentSlide(2)" alt="Book, used by player to learn about the ways of the Gods.">
+												  </div>
+												  <div class="column">
+													<img class="demo cursor" src="/images/Candle.png" style="width:100%" onclick="currentSlide(3)" alt="Candle, used by the Doctor and town residents.">
+												  </div>
+												  <div class="column">
+													<img class="demo cursor" src="/images/Bottle.png" style="width:100%" onclick="currentSlide(4)" alt="Bottle, used to store liquids and as vials for the doctor.">
+												  </div>
+												  <div class="column">
+													<img class="demo cursor" src="/images/arenaInScene.png" style="width:100%" onclick="currentSlide(5)" alt="Arena, player fights first boss here.">
+												  </div>
+												  <div class="column">
+													<img class="demo cursor" src="/images/marketStalls.png" style="width:100%" onclick="currentSlide(6)" alt="Market Stalls, places for the residents to sell their goods.">
+												  </div>
+												</div>
+											  </div>
+
+											  <script>
+												let slideIndex = 1;
+													showSlides(slideIndex);
+
+													// Next/previous controls
+													function plusSlides(n) {
+													showSlides(slideIndex += n);
+													}
+
+													// Thumbnail image controls
+													function currentSlide(n) {
+													showSlides(slideIndex = n);
+													}
+
+													function showSlides(n) {
+													let i;
+													let slides = document.getElementsByClassName("mySlides");
+													let dots = document.getElementsByClassName("demo");
+													let captionText = document.getElementById("caption");
+													if (n > slides.length) {slideIndex = 1}
+													if (n < 1) {slideIndex = slides.length}
+													for (i = 0; i < slides.length; i++) {
+														slides[i].style.display = "none";
+													}
+													for (i = 0; i < dots.length; i++) {
+														dots[i].className = dots[i].className.replace(" active", "");
+													}
+													slides[slideIndex-1].style.display = "block";
+													dots[slideIndex-1].className += " active";
+													captionText.innerHTML = dots[slideIndex-1].alt;
+													}
+											  </script>
+											<!-- <div class="row">
 												<div class="column">
 												  <img src="/images/Fountain.png" alt="Fountain" style="width: 100%" onclick="myFunction(this);"> 
 												</div>
@@ -171,7 +267,7 @@
 
 												  <h3> See videos below showcasing the Arena + Boss and a show case of the level as a whole
 													Videos can be made fullscreen.
-												</h3>
+												</h3> -->
 													
 												  <video width="320" height="240" controls>
 													<source src="/images/arenaAndWurlShowcase.mp4" alt="arenaAndWurlShowcase" style="width:100%" onclick="myFunction(this);">
