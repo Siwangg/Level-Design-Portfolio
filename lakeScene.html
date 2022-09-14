@@ -76,12 +76,10 @@
 											<p>Currently in development using Unity 2022 and Blender</p>
 										</header>
 										<p>
-											<a href="#" class="image featured"><img src="images/Town.png" alt="" /></a>
+											<a href="#" class="image featured"><img src="images/lakeLevelEntrance.jpg" alt="" /></a>
 											<h3>This is an isometric RPG based in the realm of Earth and the Gods. It is being made with Unity 2022.</h3>
 										</p>
-										<p>The first playable level is based in the town that the hero visits when he has been released from the doctors office.
-											Since this is based in the lands of the gods and earth there is small elements even now that the Gods are watching
-											over everything.
+										<p>This cutscene is based in the lake district on Earth. This is the first introduction the player will get with the main character.
 										</p>	
 										</p>
 										<p>
@@ -94,19 +92,21 @@
 											</header>
 											
 											<p>
-												This is an introductory level. It is meant to teach the player the core mechanics of the game and introduce them to the basic mobs that they will encounter along the way.
-												This also includes a boss, Wurl, which can be seen below.
+												This is the very first cutscene level that is seen when starting the game. It is a representation of the player falling from the world of the Gods down to Earth. 
+												He is then seen by a man fishing and rescued from the lake and brought back to his study.
 											</p>
 						
-											<img src="images/Wurl.png" class="img-fluid" alt="...">
+											<div class="column">
+												<img src="/images/playerOnWater.jpg" alt="Fountain" style="width: 100%" onclick="myFunction(this);"> 
+											  </div>
 										</section>
 										<section>
 											<header>
 												<h3>Assets</h3>
 											</header>
 											<p>
-												Below is a collection of the assets that I made for this introductory level as well as some that were re-purposed for another level involving a Doctor Stduy.
-												All these assets were made in Blender. Asset materials were also created by me within Unity itself as opposed to making them in Blender.
+												Below is a selection of screenshots from the lake scene, all made by myself.
+												I believe the water appears white in the editor because of our switch from builtin graphics to URP after I joined the team. Before I joined the team, the game was built with the built in Unity graphics engine.
 											</p>
 
 											<h3>Click images to make them bigger</h3>
@@ -130,171 +130,33 @@
 												font-size: 20px;
 												}
 											</style>
-											<div class="container">
 
-												<!-- Full-width images with number text -->
-												<div class="mySlides">
-												  <div class="numbertext">1 / 6</div>
-												  <img src="/images/Fountain.png" style="width:100%">
-												</div>
-											  
-												<div class="mySlides">
-												  <div class="numbertext">2 / 6</div>
-												  <img src="/images/Book.png" style="width:100%">
-												</div>
-											  
-												<div class="mySlides">
-												  <div class="numbertext">3 / 6</div>
-												  <img src="/images/Candle.png" style="width:100%">
-												</div>
-											  
-												<div class="mySlides">
-												  <div class="numbertext">4 / 6</div>
-												  <img src="/images/Bottle.png" style="width:100%">
-												</div>
-											  
-												<div class="mySlides">
-												  <div class="numbertext">5 / 6</div>
-												  <img src="/images/arenaInScene.png" style="width:100%">
-												</div>
-											  
-												<div class="mySlides">
-												  <div class="numbertext">6 / 6</div>
-												  <img src="/images/marketStalls.png" style="width:100%">
-												</div>
-											  
-												<!-- Next and previous buttons -->
-												<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-												<a class="next" onclick="plusSlides(1)">&#10095;</a>
-											  
-												<!-- Image text -->
-												<div class="caption-container">
-												  <p id="caption"></p>
-												</div>
-											  
-												<!-- Thumbnail images -->
-												<div class="row">
-												  <div class="column">
-													<img class="demo cursor" src="/images/Fountain.png" style="width:100%" onclick="currentSlide(1)" alt="Fountain, central point of the Town.">
-												  </div>
-												  <div class="column">
-													<img class="demo cursor" src="/images/Book.png" style="width:100%" onclick="currentSlide(2)" alt="Book, used by player to learn about the ways of the Gods.">
-												  </div>
-												  <div class="column">
-													<img class="demo cursor" src="/images/Candle.png" style="width:100%" onclick="currentSlide(3)" alt="Candle, used by the Doctor and town residents.">
-												  </div>
-												  <div class="column">
-													<img class="demo cursor" src="/images/Bottle.png" style="width:100%" onclick="currentSlide(4)" alt="Bottle, used to store liquids and as vials for the doctor.">
-												  </div>
-												  <div class="column">
-													<img class="demo cursor" src="/images/arenaInScene.png" style="width:100%" onclick="currentSlide(5)" alt="Arena, player fights first boss here.">
-												  </div>
-												  <div class="column">
-													<img class="demo cursor" src="/images/marketStalls.png" style="width:100%" onclick="currentSlide(6)" alt="Market Stalls, places for the residents to sell their goods.">
-												  </div>
-												</div>
-											  </div>
-
-											  <script>
-												let slideIndex = 1;
-													showSlides(slideIndex);
-
-													// Next/previous controls
-													function plusSlides(n) {
-													showSlides(slideIndex += n);
-													}
-
-													// Thumbnail image controls
-													function currentSlide(n) {
-													showSlides(slideIndex = n);
-													}
-
-													function showSlides(n) {
-													let i;
-													let slides = document.getElementsByClassName("mySlides");
-													let dots = document.getElementsByClassName("demo");
-													let captionText = document.getElementById("caption");
-													if (n > slides.length) {slideIndex = 1}
-													if (n < 1) {slideIndex = slides.length}
-													for (i = 0; i < slides.length; i++) {
-														slides[i].style.display = "none";
-													}
-													for (i = 0; i < dots.length; i++) {
-														dots[i].className = dots[i].className.replace(" active", "");
-													}
-													slides[slideIndex-1].style.display = "block";
-													dots[slideIndex-1].className += " active";
-													captionText.innerHTML = dots[slideIndex-1].alt;
-													}
-											  </script>
-											<!-- <div class="row">
+											<div class="row">
 												<div class="column">
-												  <img src="/images/Fountain.png" alt="Fountain" style="width: 100%" onclick="myFunction(this);"> 
+												  <img src="/images/surroundingOfLake.png" alt="surroundingOfLake" style="width: 100%" onclick="myFunction(this);"> 
 												</div>
 												<div class="column">
-												  <img src="/images/Book.png" alt="Book" style="width: 100%" onclick="myFunction(this);"> 
+												  <img src="/images/startingArenaLake.jpg" alt="startingArenaLake" style="width: 100%" onclick="myFunction(this);"> 
 												</div>
 												<div class="column">
-												  <img src="/images/Candle.png" alt="Candle" style="width:100%" onclick="myFunction(this);">
+												  <img src="/images/lakeLevelEntrance.jpg" alt="lakeLevelEntrance" style="width:100%" onclick="myFunction(this);">
 												</div>
 												<div class="column">
-												  <img src="/images/Bottle.png" alt="Book" style="width:100%" onclick="myFunction(this);">
-												</div>
-												<div class="column">
-													<img src="/images/Garden.png" alt="Garden" style="width:100%" onclick="myFunction(this);">
-												  </div>
-												  <div class="column">
-													<img src="/images/GardenInScene.png" alt="GardenInScene" style="width:100%" onclick="myFunction(this);">
-												  </div>
-												  <div class="column">
-													<img src="/images/Cart.png" alt="Cart" style="width:100%" onclick="myFunction(this);">
-												  </div>
-												  <div class="column">
-													<img src="/images/CartInScene.png" alt="CartInScene" style="width:100%" onclick="myFunction(this);">
-												  </div>
-												  <div class="column">
-													<img src="/images/marketStalls.png" alt="marketStalls" style="width:100%" onclick="myFunction(this);">
-												  </div>
-												  <div class="column">
-													<img src="/images/arena.png" alt="arena" style="width:100%" onclick="myFunction(this);">
-												  </div>
-												  <div class="column">
-													<img src="/images/arenaInScene.png" alt="arenaInScene" style="width:100%" onclick="myFunction(this);">
-												  </div>
-												  <div class="column">
-													<img src="/images/dock.png" alt="dock" style="width:100%" onclick="myFunction(this);">
+													<img src="/images/oppositeSideOfLake.png" alt="oppositeSideOfLake" style="width:100%" onclick="myFunction(this);">
 												  </div>
 
-												  <h3> See videos below showcasing the Arena + Boss and a show case of the level as a whole
+												  <!-- <h3> See videos below showcasing the Arena + Boss and a show case of the level as a whole
 													Videos can be made fullscreen.
 												</h3> -->
 													
-												  <video width="320" height="240" controls>
+												  <!-- <video width="320" height="240" controls>
 													<source src="/images/arenaAndWurlShowcase.mp4" alt="arenaAndWurlShowcase" style="width:100%" onclick="myFunction(this);">
 												  </video>
 												  <video width="320" height="240" controls>
 													<source src="/images/levelShowcase.mp4" alt="levelShowcase" style="width:100%" onclick="myFunction(this);">
-												  </video>
-												  <p>Fps in videos is not representative of end product.</p>
+												  </video> -->
+												  <!-- <p>FPs in videos is not representative of end product.</p> -->
 											  </div>
-
-											  <div class="row">
-											<div class="col-4 col-6-medium col-12-small">
-												<section class="box">
-													<a href="lakeScene.html" class="image featured"><img src="images/Unity_y9VfZwfYUJ.jpg" alt="" /></a>
-													<header>
-														<h3> Unity | <b>Untitled RPG | Lake Scene</b></h3>
-													</header>
-													<p>
-														This page shows the work that was done on the introduction cutscene level, made within Unity by Me.
-													</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="https://github.com/joshuahall98/Untitled-RPG-3D" class="button alt">View Project on Github</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
 											  
 											  
 											  <div class="container">
